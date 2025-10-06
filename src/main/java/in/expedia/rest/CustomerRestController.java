@@ -15,13 +15,7 @@ import in.expedia.binding.Customer;
 
 @RestController
 public class CustomerRestController {
-	@DeleteMapping("/customer/{cid}")
-	public String deleteCustomer(@PathVariable Integer cid) {
-
-		// db logic
-		return "customer Deleted";
-	}
-
+	
 	@PutMapping("/customer")
 	public String updateCustomer(@RequestBody Customer c) {
 		System.out.println(c);
